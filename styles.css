@@ -1,0 +1,125 @@
+*{
+    font-family: monospace;
+    text-align: center;
+    /* border: 1px solid red !important; */
+}
+
+body{
+    background-color: #ededed;
+}
+
+#root{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#game-board{
+    height: 500px;
+    width: 500px;
+    /* margin: 2px; */
+    display: grid;
+    grid-template-columns: repeat(var(--game-columns), 1fr);
+    grid-template-rows: repeat(var(--game-rows), 1fr);
+    border: 4px solid gray;
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.game-square{
+    aspect-ratio: 1;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#settings-wrapper{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px 200px 0px;
+}
+
+#colorpicker-wrapper{
+    background-color: #000000;
+    height: 60px;
+    width: 60px;
+}
+
+#colorpicker{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+button{
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 8px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+button:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+button:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+#color-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

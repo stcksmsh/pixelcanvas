@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Pixel Canvas</title>
+<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>Pixel Canvas</header>
+    <main>
+        <div id="root">
+            <div id="game-board"></div>
+            <div id="settings-wrapper">
+                <div id="size-selection">
+                    <h1>Size</h1>
+                    <button id="size8">8</button>
+                    <button id="size16">16</button>
+                    <button id="size32">32</button>                
+                </div>
+                <div id="color-selection">
+                    <h1>Color</h1>
+                    <div id="colorpicker-wrapper"><input type="color" id="colorpicker" name="colorpicker" value="#000000"></div>    
+                </div>
+                <div id="type-selection">
+                    <h1>Mode</h1>
+                    <button id="randomBtn">Random</button>
+                    <button id="colorBtn">Color</button>
+                    <button id="eraseBtn">Eraser</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
